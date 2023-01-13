@@ -1,5 +1,5 @@
 /**
- * 
+ * This JavaScript file is used to create the Q&A fuctionality in the "All about my dog Webpage"
  */
  
  
