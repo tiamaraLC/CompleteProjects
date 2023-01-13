@@ -1,7 +1,6 @@
 /*
  * Author: Tiamara Craig
  * File autocomplete.c
- * Class: CSc 352
  * Description: This program works to implement the WordList Struct 
  * described in the autocomplete.h file. This program models
  * a growing array of string pointers.
