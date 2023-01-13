@@ -1,5 +1,6 @@
 /**
- * 
+ * Author: Tiamara Craig
+ * This JS file illustrates the fuctionality of a picture slideshow including a thumbnamil
  */
  
 var slideIndex = 1;
