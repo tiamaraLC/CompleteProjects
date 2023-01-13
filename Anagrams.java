@@ -1,8 +1,6 @@
 /*
  * 
- * Tiamara Craig
- * CSc- 210
- * PA12Main.java
+ * Author: Tiamara Craig
  * 
  * This program works to find the anagrams of given word using
  * a dictionary file of possible anagrams. Using recursive 
