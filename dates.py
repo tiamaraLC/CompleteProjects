@@ -1,6 +1,5 @@
 '''
-Tiamara Craig
-CSc 120 - 2c
+Author: Tiamara Craig
 Description: This program works to organize a series of dates based on
              the file inputed by the user. It utalizes classes as a template
              to store and organize each date and event. 
