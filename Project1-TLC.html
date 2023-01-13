@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<!--Link CSS file-->
+<link rel="stylesheet" href="Project1CSS-TLC.css" />
+
+<!--Link Javascript file-->
+<script src="./Project1_JS_TLC.js" type="text/javascript"></script>
+
+
+<title>All about my Dog</title>
+</head>
+
+<!--Demonstrates the use of javascript embedded within the HTML file-->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+	var acc = document.getElementsByClassName("accordion");
+	for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.nextElementSibling.classList.toggle("show");
+  	}
+}
+});
+</script>
+
+
+<body>
+
+<!--Demonstrates a signle div elem-->
+<div class="welcome">
+<h1> Hello, and Welcome to KC'S Page.</h1>
+</div>
+
+<!--div, mainContainer, illustartes inheritance in HTML  -->
+<div class="mainContainer">
+    <div class="contentColumn">
+    
+    
+    
+        <!--About Me-->
+        <!--Demonstrates a type of button / event-->
+        <button class="accordion">All About Me</button>
+        <div class="panel show">
+	        <div id="infoHeader">
+	            <span class="sectionHeader">All About Me</span>
+	        </div>
+	        <div id="text" class="section">
+	        
+	       <!-- Slideshow container -->
+			<div class="slideshow-container">
+			
+			  <!-- The three images in the slide show -->
+			  <div class="slideShow">
+			    <img src="KC.JPG" alt="KC on a hike">
+			  </div>
+			
+			  <div class="slideShow">
+			   <img src="KC2.jpg" alt="KC with his vest">
+			  </div>
+			
+			  <div class="slideShow">
+			    <img src="KC3.jpeg" alt="KC laying down">
+			  </div>
+			
+			
+			<!-- The dots for the slide show -->
+			<h6> click the dots to see more</h6>
+			<div class="slideDots">
+			  <span class="dot" onclick="currentSlide(1)"></span>
+			  <span class="dot" onclick="currentSlide(2)"></span>
+			  <span class="dot" onclick="currentSlide(3)"></span>
+			</div>
+	        
+	        
+	    
+        		<!-- The use of paragraphs in HTML files -->
+	            <p> Hello, this is my dog KC. He is a loving golden doodle, who would rather sit infront
+				the fan and take a nap than run an play outside for too long. So, I would say that he is pretty lazy.
+				Nevertheless, he is always smiling.</p> 
+				<p> In this photo you can see just how happy he is to enjoy a few minutes in the sun. In this photo
+				that you see he is just a puppy, to be precise he is two years old. He was born March 4th, 2019, here is
+				Tucson AZ. We became official best buddies in August of that same year, and ever since we have been 
+				inseparable. </p>
+
+	        </div>
+		</div>
+
+		
+		
+		<!--My Favorite Things-->
+        <button class="accordion">My Favorite Things</button>
+			<div class="panel show">
+		        <div id="infoHeader">
+	            <span class="sectionHeader">My Favorite Things</span>
+	            
+	        <!--Demonstates an unordered list-->
+	        </div>
+		        <ul>
+		        <li>Food</li>
+     			<li>Treats</li>
+      			<li>Naps</li>
+      			<li>TV</li>
+      			<li>Talking </li>
+      			<li>Ice</li>
+      			<li>City Views</li>
+      			<li>My mom</li>
+		        </ul>
+		        
+			</div>
+
+
+
+
+		<!--Things I could do Without-->
+         <button class="accordion">Things I could do Without</button>
+			<div class="panel show">
+		        <div id="infoHeader">
+	            <span class="sectionHeader">Things I could do Without</span>
+	       
+	        <div id ="sweaterVid" style='text-align: right;'>
+		        <iframe width="160" height="215" src="https://www.youtube.com/embed/MJJwKNXa9ZE" 
+		        title="YouTube video player" 
+		        frameborder="0" 
+		        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+		        allowfullscreen></iframe>
+	       </div>
+	       
+	       <div id='oList' style='text-align: left;'>
+	        	<!--Demonstates an ordered list-->
+		        <ol>
+		        <li>Sweaters</li>
+     			<li>The car wash machine</li>
+     			<li>Long walks
+		        </ol>
+		        
+			</div>
+			</div>
+			</div>
+
+
+
+
+		<!--Fun Fact-->
+        <button class="accordion">Fun Fact</button>
+        <div class="panel show">
+	        <div id="nameHeader">
+	            <span class="sectionHeader">How did I get my name?</span>
+	        </div>
+	        
+	        <p>Give it your best guess!<br></br>
+	        
+	        
+	        <!--Demonstates the use of javascript to allow user interaction through selction/
+	        button/ mouse clicks-->
+	        <div id='A' style='padding: 10px;'>
+		    <label for='optionA' style=' padding: 5.5px; font-size: 20px;'>
+		      <input type='radio' name='option' value='6/24' id='optionA' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+		      From a cereal Box</label>
+		    <span id='resultA'></span>
+		  </div>
+		  <hr />
+		
+		  <div id='B' style='padding: 10px;'>
+		    <label for='optionB' style=' padding: 5.5px; font-size: 20px;'>
+		      <input type='radio' name='option' value='6' id='optionB' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+		      From a singing group</label>
+		    <span id='resultB'></span>
+		  </div>
+		  <hr />
+		
+		  <div id='C' style='padding: 10px;'>
+		    <label for='optionC' style=' padding: 5.5px; font-size: 20px;'>
+		      <input type='radio' name='option' value='1/3' id='optionC' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+		      From a cartoon character</label>
+		    <span id='resultC'></span>
+		  </div>
+		  <hr />
+		
+		  <div id='D' style='padding: 10px;'>
+		    <label for='optionD' style=' padding: 5.5px; font-size: 20px;'>
+		      <input type='radio' name='option' value='1/6' id='optionD' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+		      Just Random</label>
+		    <span id='resultD'></span>
+		  </div>
+		  <hr />
+		  <button type='button' onclick='displayAnswer1()' style='width: 100px; height: 40px; border-radius: 3px; background-color: #BFD4DB; font-weight: 700;'>Submit</button>
+		</div>
+	    
+	        
+	        
+	        
+	          
+	       
+	        
+	        
+	        
+	        <!--Demonstrates how you can display a div element ussing javascript-->
+	        <div id="answText" class="section" style="display:none; onclick="showDiv()">
+	        <h4> The Real Answer</h4>
+	            <p> I am actually apart of a pair. I have a brother named Jojo. 
+	            Together we are Jojo and KC which used to be an American R&B duo back in the 90’s to early 2000’s.
+                </p>
+	        </div>
+		</div>
+    
+    
+    
+    
+    		<!--Where am I today-->
+            <button class="accordion">Where am I today</button>
+        <div class="panel show">
+	        <div id="videoHeader">
+	            <span class="sectionHeader">You Can Find Me ... Here</span>
+	        </div>
+	        <div id="text" class="section">
+	            
+	         <iframe width="560" height="315" 
+	         src="https://www.youtube.com/embed/G5MODOR9ips" 
+	         title="YouTube video player" frameborder="0" 
+	         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+	          allowfullscreen></iframe>
+	        </div>
+		</div>
+      
+    
+    </div>
+    
+    
+</div>
+
+
+<!--Link Javascript file-->
+<script src="./QA.js" type="text/javascript"></script>
+</html>
