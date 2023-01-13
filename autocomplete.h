@@ -18,19 +18,10 @@ struct WordList
 typedef struct LookupTreeNode LookupTreeNode;
 struct LookupTreeNode
 {
-    /* YOU MUST IMPLEMENT THIS FIELD
+    /* 
      *
-     * This field must be an array of 26 pointers.  It must be an actual
-     * array of pointers, declared here (not a pointer-pointer).
-     *
-     * But here's the trick: you are going to mix the * and the [] in your
-     * declaration.  Which has a higher precedence to the parser - are you
-     * declaring an array of pointers, or a pointer to a single
-     * fixed-length buffer?
-     *
-     * I can never remember.  I always run a testcase using sizeof() to
-     * check, each time that I write a program that needs this sort of thing.
-     * You should do the same!
+     * This field must be an array of 26 pointers.  An actual
+     * array of pointers, declared here (not a pointer-pointer)
      */
     LookupTreeNode *children[26];
     /* see the WordList type (with its associated functions) above. */
