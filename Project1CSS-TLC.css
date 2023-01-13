@@ -1,0 +1,132 @@
+
+
+/* This will impact all elements contiang within the body tag */
+body {
+	background-image: url('background.gif');
+    color: black;
+    font-size: 12pt;
+    font-family: Garamond (serif);
+}
+
+/* This impact tags labed h1 and h6 (headings) */
+h1, h6 {
+	text-align: center;
+}
+
+
+
+/* This impact img elements */
+img {
+    display: block;
+    margin: auto;
+    max-width: 200px;
+    max-height: 300px;
+}
+
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.slideShow {
+  display: none;
+}
+
+.slideDots {
+	text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+
+
+/* Style the buttons that are used to open/ close the accordion panel */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 97%;
+    text-align: center;
+    border: none;
+    outline: none;
+    margin: 3px;
+    transition: 0.4s;
+}
+
+
+/* Style the accordion panel.*/
+.panel {
+    padding: 7px;
+    width: 97%;
+    background-color: #E3DAD5;
+    display: none;
+     
+    
+}
+
+/* This will show the panel content */
+.panel.show {
+    display: block;
+}
+
+
+
+
+.mainContainer {
+    display: flex;
+    margin: auto;
+  	width: 50%;
+  	padding: 10px;
+   
+}
+
+.contentColumn {
+    width: 640px;
+    
+}
+
+
+.section {
+    margin-bottom: 30px;
+    
+}
+
+.sectionHeader {
+    font-size: 20pt;
+    opacity: 0.7;
+    
+}
+
+.subSectionHeader {
+    font-size: 14pt;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
